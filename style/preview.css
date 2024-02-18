@@ -5,7 +5,7 @@
       rgba(3, 1, 000, 0.8856792717086834) 37%,
       rgba(227, 224, 222, 0.16299019607843135) 100%
     ),
-    url(/src/images/man.png);
+    url(../src/images/man.png);
   background-size: cover;
   background-position: center;
   margin-top: 66px;
