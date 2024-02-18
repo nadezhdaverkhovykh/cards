@@ -1,0 +1,220 @@
+.reproduction {
+  display: flex;
+  width: 100%;
+  max-width: 1110px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.reproduction__text {
+  font-size: 40px;
+}
+.reproduction__country {
+  width: 428px;
+  height: 43px;
+  display: flex;
+  justify-content: space-between;
+}
+.reproduction__item_france,
+.reproduction__item_germany,
+.reproduction__item_england {
+  width: 108px;
+  height: 43px;
+  border: solid 1px transparent;
+  border-radius: 20px;
+  background-color: #d4e8d9;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+reproduction__item_england {
+  padding: 17px;
+}
+.reproduction__item_france:hover {
+  color: #f4f6f5;
+  background: #598d66;
+}
+
+.reproduction__item_germany:hover {
+  color: #f4f6f5;
+  background: #598d66;
+}
+.reproduction__item_england:hover {
+  color: #f4f6f5;
+  background: #598d66;
+}
+
+.reproduction__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(2, 730px);
+  margin-top: 20px;
+}
+.reproduction__card {
+  width: 350px;
+  height: 730px;
+  padding: 20px;
+  background-color: #e1ede6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.reproduction__picture {
+  width: 310px;
+  height: 422px;
+  background-color: white;
+  object-fit: cover;
+}
+.germany {
+  object-fit: cover;
+  object-position: left;
+}
+.england {
+  object-fit: cover;
+  object-position: center;
+}
+.reproduction__discription {
+  display: flex;
+  flex-direction: column;
+}
+.reproduction__author {
+  color: #86928b;
+  font-size: 18px;
+}
+.reproduction__name {
+  color: #2c2d35;
+  font-size: 30px;
+}
+.reproduction__materials {
+  color: #2c2d35;
+  font-size: 18px;
+}
+
+.reproduction__price {
+  color: #598d66;
+  font-size: 24px;
+}
+
+.reproduction__busket {
+  border: 1px solid #598d66;
+  width: 100%;
+  height: 65px;
+  color: #598d66;
+  font-size: 20px;
+  background-color: #e1ede6;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reproduction__busket:hover {
+  color: #f4f6f5;
+  background: #598d66;
+  transition: 0.3s;
+}
+.reproduction__busket:active {
+  color: #f4f6f5;
+  background: #174924;
+}
+.grid__wrapper {
+  overflow: hidden;
+}
+.grid__track {
+  transition: 1s;
+  display: flex;
+}
+
+#fr:checked ~ .reproduction__item_france {
+  color: #f4f6f5;
+  background: #174924;
+}
+
+#ge:checked ~ .reproduction__item_germany {
+  color: #f4f6f5;
+  background: #174924;
+}
+
+#en:checked ~ .reproduction__item_england {
+  color: #f4f6f5;
+  background: #174924;
+}
+
+.grid__radio {
+  display: none;
+}
+
+#fr:checked ~ .grid__track {
+  margin-left: 0;
+}
+#ge:checked ~ .grid__track {
+  margin-left: -100%;
+}
+#en:checked ~ .grid__track {
+  margin-left: -200%;
+}
+.help {
+  height: 20px;
+}
+
+.reproduction__picture germany {
+  object-position: center;
+}
+@media (max-width: 768px) {
+  .reproduction__card {
+    width: 330px;
+    height: 730px;
+  }
+  .reproduction__text {
+    font-size: 30px;
+  }
+  .reproduction__grid {
+    grid-template-columns: repeat(2, 330px);
+    grid-template-rows: repeat(2, 730px);
+  }
+  .reproduction__picture {
+    width: 290px;
+    height: 422px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 576px) {
+  .reproduction__text {
+    font-size: 24px;
+  }
+  .reproduction {
+    margin-top: -60px;
+  }
+  .reproduction__grid {
+    grid-template-columns: repeat(2, 240px);
+    grid-template-rows: repeat(2, 514px);
+  }
+  .reproduction__picture {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .reproduction__card {
+    width: 240px;
+    height: 514px;
+  }
+  .reproduction__author {
+    font-size: 16px;
+  }
+
+  .reproduction__name {
+    font-size: 24px;
+  }
+  .reproduction__materials {
+    font-size: 16px;
+  }
+
+  .reproduction__price {
+    font-size: 20px;
+  }
+  .reproduction__busket {
+    width: 100%;
+    height: 50px;
+  }
+}

@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", "sans-serif";
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #f4f8f8;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #2c2d35;
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 690px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    max-width: 510px;
+    margin: 0 auto;
+  }
+}

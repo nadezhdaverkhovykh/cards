@@ -1,0 +1,30 @@
+header {
+  background-color: #e1ede6;
+  position: fixed;
+  width: 100vw;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__ink {
+  color: #598d66;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+.header__item {
+  margin-left: 60px;
+}
+@media (max-width: 576px) {
+  .header__wrapper {
+    height: 123px;
+  }
+}

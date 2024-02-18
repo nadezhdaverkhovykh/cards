@@ -1,0 +1,83 @@
+.preview {
+  height: 574px;
+  background-image: linear-gradient(
+      90deg,
+      rgba(3, 1, 000, 0.8856792717086834) 37%,
+      rgba(227, 224, 222, 0.16299019607843135) 100%
+    ),
+    url(/src/images/man.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: 66px;
+  display: flex;
+  justify-content: center;
+}
+
+.preview__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.preview__title {
+  width: 521px;
+  height: 80px;
+  font-size: 26px;
+  color: #f4f6f5;
+  display: flex;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+}
+.preview__image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.preview___text {
+  width: 540px;
+  height: 209px;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.preview__text_one,
+.preview__text_two {
+  margin-top: 30px;
+}
+.preview__button {
+  height: 65px;
+  width: 257px;
+  background-color: #eedb6d;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+  margin-top: 60px;
+}
+.preview__button:hover {
+  color: #f4f6f5;
+  background: #c28e4e;
+  transition: 0.3s;
+}
+.preview__button:active {
+  color: #f4f6f5;
+  background: #873c03;
+}
+@media (max-width: 768px) {
+  .preview__button {
+    height: 60px;
+    width: 210px;
+  }
+}
+@media (max-width: 576px) {
+  .preview {
+    height: 502px;
+    background-image: url(/src/images/man.png);
+  }
+  .preview__button {
+    height: 50px;
+    width: 190px;
+    margin-top: 20px;
+  }
+}
