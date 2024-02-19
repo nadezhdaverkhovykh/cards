@@ -29,8 +29,8 @@
   padding: 10px;
 }
 
-reproduction__item_england {
-  padding: 17px;
+.reproduction__item_england {
+  padding: 10px 17px;
 }
 .reproduction__item_france:hover {
   color: #f4f6f5;

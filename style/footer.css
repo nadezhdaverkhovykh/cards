@@ -11,7 +11,6 @@ footer {
 .footer__logo {
   display: flex;
   align-items: center;
-  flex-direction: column;
   margin-top: 23px;
 }
 .footer__phone {
@@ -50,6 +49,10 @@ footer {
 .footer__media {
   cursor: pointer;
 }
+hr {
+  visibility: hidden;
+}
+
 @media (max-width: 768px) {
   .footer__wrapper {
     width: 768px;
@@ -57,9 +60,37 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
+  .footer {
+    margin-top: 0px;
+  }
+  .footer__logo {
+    flex-direction: row;
+    margin-top: 0px;
+  }
+  .footer__contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer__nav {
+    order: 1;
+  }
+  .footer__social {
+    order: 1;
+  }
 }
+.footer__phone {
+  padding: 5px;
+}
+
 @media (max-width: 576px) {
   .footer__wrapper {
     height: 319px;
+    justify-content: center;
+  }
+  .footer__element {
+    visibility: visible;
+    width: 100%;
+    order: 1;
   }
 }

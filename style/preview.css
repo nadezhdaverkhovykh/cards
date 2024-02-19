@@ -69,15 +69,23 @@
     height: 60px;
     width: 210px;
   }
+  .preview {
+    background-image: url(../src/images/pic_background.png);
+  }
 }
 @media (max-width: 576px) {
   .preview {
     height: 502px;
-    background-image: url(/src/images/man.png);
+    background-image: url(../src/images/pic_background2.png);
   }
   .preview__button {
     height: 50px;
     width: 190px;
     margin-top: 20px;
+  }
+  .preview__title {
+    font-size: 24px;
+    width: 363px;
+    height: 48px;
   }
 }

@@ -23,8 +23,20 @@ header {
 .header__item {
   margin-left: 60px;
 }
+hr {
+  visibility: hidden;
+}
 @media (max-width: 576px) {
   .header__wrapper {
     height: 123px;
+    display: flex;
+    flex-direction: column;
+  }
+  .header__element {
+    visibility: visible;
+    width: 100%;
+  }
+  .header__menu {
+    padding: 12px;
   }
 }
