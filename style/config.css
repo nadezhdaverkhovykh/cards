@@ -22,7 +22,7 @@ a {
   max-width: 1110px;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .container {
     width: 100%;
     max-width: 690px;
@@ -30,7 +30,7 @@ a {
   }
 }
 
-@media (max-width: 576px)  {
+@media (max-width: 576px) {
   .container {
     width: 100%;
     max-width: 510px;
