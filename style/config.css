@@ -30,10 +30,17 @@ a {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px)  {
   .container {
     width: 100%;
     max-width: 510px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 320px) and(max-width: 360px) {
+  .container {
+    width: 100%;
+    max-width: 290px;
     margin: 0 auto;
   }
 }

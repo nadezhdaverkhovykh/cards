@@ -94,3 +94,20 @@ hr {
     order: 1;
   }
 }
+@media (min-width: 320px) and (max-width: 360px) {
+  .footer__wrapper {
+    width: 320px;
+    height: 395px;
+  }
+  .footer__element {
+    width: 290px;
+    order: 1;
+  }
+  .footer__social {
+    width: 176px;
+    height: 48px;
+  }
+  p {
+    font-size: 12px;
+  }
+}

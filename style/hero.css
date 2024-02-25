@@ -113,3 +113,22 @@
     width: 178px;
   }
 }
+@media (min-width: 320px) and (max-width: 360px) {
+  .hero__image {
+    display: none;
+  }
+  .hero__title {
+    width: 285px;
+    height: 60px;
+    font-size: 30px;
+  }
+  .hero__discription {
+    width: 290px;
+    height: 63px;
+    font-size: 14px;
+  }
+  .hero__product {
+    height: 50px;
+    width: 154px;
+  }
+}

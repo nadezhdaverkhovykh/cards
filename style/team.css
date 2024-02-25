@@ -31,7 +31,6 @@
 .team__title {
   font-size: 40px;
 }
-
 .team__picture {
   width: 457px;
   height: 450px;
@@ -64,10 +63,43 @@
     height: 656px;
     margin-top: 50px;
   }
-
   .team__about {
     width: 510px;
     height: 256px;
     margin-top: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 360px) {
+  .team__images {
+    width: 290px;
+    height: 80px;
+    margin-top: 10px;
+  }
+  .team__worker {
+    margin-right: 9px;
+  }
+
+  .team__title {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .team__text {
+    font-size: 16px;
+  }
+  .team__about {
+    width: 290px;
+  }
+  .team__picture {
+    width: 230.3px;
+    height: 258.05px;
+  }
+  .team__brush {
+    width: 290.3px;
+    height: 270.05px;
+    object-fit: contain;
+    margin: 0;
+  }
+  .team {
+    height: 683px;
   }
 }

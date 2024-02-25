@@ -218,3 +218,26 @@
     height: 50px;
   }
 }
+@media (min-width: 320px) and (max-width: 360px) {
+  .reproduction__text {
+    font-size: 24px;
+  }
+
+  .reproduction__item_france,
+  .reproduction__item_germany,
+  .reproduction__item_england {
+    padding: 3px;
+  }
+  .reproduction__grid {
+    grid-template-columns: repeat(1, 514px);
+  }
+  .reproduction__card {
+    width: 290px;
+    height: 514px;
+  }
+  .reproduction__picture {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+}
