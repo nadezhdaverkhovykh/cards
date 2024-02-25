@@ -229,7 +229,11 @@
     padding: 3px;
   }
   .reproduction__grid {
-    grid-template-columns: repeat(1, 514px);
+    grid-template-columns: repeat(1, 290px);
+    grid-template-rows: repeat(6, 514px);
+  }
+  .grid__track {
+    gap: 30px;
   }
   .reproduction__card {
     width: 290px;
